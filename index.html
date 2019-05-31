@@ -5,14 +5,35 @@
     <title>Home</title>
   </head>
     <body>
-      <center><a href="index.html"><font color=white>Home</a>
-      <a href="portfolio.html"><font color=white>Portfolio</a>
-      <a href="about-me.html"><font color=white>About Me</a>
+      <center><a class="button" href="index.html">Home</a>
+      <a class="button" href="portfolio.html">Portfolio</a>
+      <a class="button" href="about-me.html">About Me</a>
       <h1><font color=lightblue>This is Brianna Floyd's Home Page!</h1></center>
       <style>
         body {
-          background-image: url(images/stars.jpg);
-          background-size:100%,100%;
+        background-image: url(images/stars.jpg);
+        background-size:100%,100%;
+        }
+        .button:link, a:visited {
+        background-color:rgb(255, 255, 255);
+        color:black;
+        padding: 20px 30px;    
+        text-align:center;
+        text-decoration:none;
+        display:inline-block;
+        font-size:18px;
+        cursor:pointer;
+        outline:none;
+        border:none;
+        border-radius:25px;
+        transition-duration:.5s;
+        }
+        .button:active {
+        background-color:rgb(255, 255, 255);
+        }
+        .button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color:rgb(200, 200, 200);
         }
       </style>
     </body>
